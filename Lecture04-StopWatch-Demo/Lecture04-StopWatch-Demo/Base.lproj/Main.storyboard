@@ -26,33 +26,18 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bo5-Qt-C6Z">
                                 <rect key="frame" x="24" y="550" width="53" height="30"/>
                                 <state key="normal" title="Night"/>
-                                <connections>
-                                    <action selector="toggleNightMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tm5-4D-ddO"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARx-ZM-q6G">
                                 <rect key="frame" x="133" y="550" width="67" height="30"/>
                                 <state key="normal" title="Start"/>
-                                <connections>
-                                    <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qRt-l4-kyN"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByA-Fn-T3d">
                                 <rect key="frame" x="259" y="550" width="67" height="30"/>
                                 <state key="normal" title="Clear"/>
-                                <connections>
-                                    <action selector="clearTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iqd-hU-LI5"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="clearButton" destination="ByA-Fn-T3d" id="9AG-na-gqP"/>
-                        <outlet property="displayLabel" destination="nXI-CQ-XUh" id="UbD-Lf-EgD"/>
-                        <outlet property="modeButton" destination="Bo5-Qt-C6Z" id="i8u-Hl-ktF"/>
-                        <outlet property="startButton" destination="ARx-ZM-q6G" id="47Z-M1-dML"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
