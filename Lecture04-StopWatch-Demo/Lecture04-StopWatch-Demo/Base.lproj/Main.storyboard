@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,27 +18,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00:00:000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXI-CQ-XUh">
-                                <rect key="frame" x="20" y="267" width="462" height="65"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bo5-Qt-C6Z">
+                                <rect key="frame" x="20" y="550" width="38" height="30"/>
+                                <state key="normal" title="Night"/>
+                                <connections>
+                                    <action selector="toggleNightMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cde-0f-wl1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARx-ZM-q6G">
+                                <rect key="frame" x="283" y="550" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUg-Kr-tXy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00:000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXI-CQ-XUh">
+                                <rect key="frame" x="157" y="267" width="286" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Yl8-QK-Bi5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bo5-Qt-C6Z">
-                                <rect key="frame" x="24" y="550" width="53" height="30"/>
-                                <state key="normal" title="Night"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARx-ZM-q6G">
-                                <rect key="frame" x="133" y="550" width="67" height="30"/>
-                                <state key="normal" title="Start"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByA-Fn-T3d">
-                                <rect key="frame" x="259" y="550" width="67" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByA-Fn-T3d">
+                                <rect key="frame" x="544" y="550" width="36" height="30"/>
                                 <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gG6-nn-WoL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ARx-ZM-q6G" secondAttribute="bottom" constant="20" id="0vW-cw-KNr"/>
+                            <constraint firstAttribute="bottom" secondItem="Bo5-Qt-C6Z" secondAttribute="bottom" constant="20" symbolic="YES" id="Bcc-zv-Thh"/>
+                            <constraint firstItem="ARx-ZM-q6G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EYz-EM-wdA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ByA-Fn-T3d" secondAttribute="trailing" id="WzD-9l-TVT"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Bo5-Qt-C6Z" secondAttribute="leading" id="avN-AY-jbB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ByA-Fn-T3d" secondAttribute="bottom" constant="20" id="miB-bx-BDn"/>
+                            <constraint firstItem="nXI-CQ-XUh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sdh-vH-yNj"/>
+                            <constraint firstItem="nXI-CQ-XUh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yD7-jq-fu5"/>
+                        </constraints>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="clearButton" destination="ByA-Fn-T3d" id="hjc-tz-ldb"/>
+                        <outlet property="displayLabel" destination="nXI-CQ-XUh" id="TmB-ao-bMr"/>
+                        <outlet property="modeButton" destination="Bo5-Qt-C6Z" id="wy9-WM-ogM"/>
+                        <outlet property="startButton" destination="ARx-ZM-q6G" id="opP-Nc-UQd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
