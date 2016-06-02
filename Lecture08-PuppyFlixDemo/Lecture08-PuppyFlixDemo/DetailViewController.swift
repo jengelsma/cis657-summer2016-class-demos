@@ -53,11 +53,30 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
+        
+        let safari : UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Action, target: self, action: #selector(DetailViewController.share))
+        
+        self.navigationItem.rightBarButtonItems = [safari]
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func share()
+    {
+        if let detail = self.detailItem {
+            if let ytId = detail["id"] as? NSDictionary {
+                if let videoId = ytId["videoId"] as? String {
+                    let url = NSURL(string: "http://www.youtube.com/watch?v=" + videoId )
+                    let msg = "Check out my favorite puppy video on YouTube"
+                    let items = [ msg, url! ]
+                    let avc = UIActivityViewController(activityItems: items, applicationActivities: nil)
+                    self.navigationController?.presentViewController(avc, animated: true, completion: nil)
+                }
+            }
+        }
     }
 
 
