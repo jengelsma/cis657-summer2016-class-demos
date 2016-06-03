@@ -1,0 +1,21 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Lecture08-PuppyFlixDemo' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Lecture08-PuppyFlixDemo
+  pod 'TUSafariActivity', '~> 1.0'
+
+  target 'Lecture08-PuppyFlixDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Lecture08-PuppyFlixDemoUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

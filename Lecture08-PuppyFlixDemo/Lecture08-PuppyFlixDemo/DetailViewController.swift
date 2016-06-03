@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TUSafariActivity
 
 class DetailViewController: UIViewController {
 
@@ -72,7 +73,12 @@ class DetailViewController: UIViewController {
                     let url = NSURL(string: "http://www.youtube.com/watch?v=" + videoId )
                     let msg = "Check out my favorite puppy video on YouTube"
                     let items = [ msg, url! ]
-                    let avc = UIActivityViewController(activityItems: items, applicationActivities: nil)
+                    
+                    let activity = TUSafariActivity()
+
+                    //let avc = UIActivityViewController(activityItems: items, applicationActivities: nil)
+                    let avc = UIActivityViewController(activityItems: items, applicationActivities: [activity])
+
                     self.navigationController?.presentViewController(avc, animated: true, completion: nil)
                 }
             }

@@ -1,0 +1,21 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Lecture09-SocialDemo' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Lecture09-SocialDemo
+  pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+
+  target 'Lecture09-SocialDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Lecture09-SocialDemoUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
