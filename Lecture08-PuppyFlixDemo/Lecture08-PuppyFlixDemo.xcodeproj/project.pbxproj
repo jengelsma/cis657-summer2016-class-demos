@@ -19,6 +19,7 @@
 		9E1EC8381CFE5F630086FF92 /* Lecture08_PuppyFlixDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1EC8371CFE5F630086FF92 /* Lecture08_PuppyFlixDemoUITests.swift */; };
 		9E1EC84A1CFE63250086FF92 /* FTWCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1EC8471CFE63250086FF92 /* FTWCache.m */; };
 		9E1EC84B1CFE63250086FF92 /* UIImageView+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1EC8491CFE63250086FF92 /* UIImageView+Network.m */; };
+		9EA2F3CB1D07A0D500A88E77 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA2F3CA1D07A0D500A88E77 /* APIKeys.swift */; };
 		FA5DB24970A02B14131D23C9 /* Pods_Lecture08_PuppyFlixDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCDCAC941661767186E0ECA /* Pods_Lecture08_PuppyFlixDemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		9E1EC8471CFE63250086FF92 /* FTWCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTWCache.m; sourceTree = "<group>"; };
 		9E1EC8481CFE63250086FF92 /* UIImageView+Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Network.h"; sourceTree = "<group>"; };
 		9E1EC8491CFE63250086FF92 /* UIImageView+Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Network.m"; sourceTree = "<group>"; };
+		9EA2F3CA1D07A0D500A88E77 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		B7A430ECE12F5997CA854F40 /* Pods-Lecture08-PuppyFlixDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lecture08-PuppyFlixDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lecture08-PuppyFlixDemoUITests/Pods-Lecture08-PuppyFlixDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CF39C6F55223102FA5548BB7 /* Pods_Lecture08_PuppyFlixDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lecture08_PuppyFlixDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4BF2CF38394E731CCADD31 /* Pods-Lecture08-PuppyFlixDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lecture08-PuppyFlixDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lecture08-PuppyFlixDemoUITests/Pods-Lecture08-PuppyFlixDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				9E1EC8201CFE5F630086FF92 /* LaunchScreen.storyboard */,
 				9E1EC8231CFE5F630086FF92 /* Info.plist */,
 				9E1EC8451CFE63240086FF92 /* Lecture08-PuppyFlixDemo-Bridging-Header.h */,
+				9EA2F3CA1D07A0D500A88E77 /* APIKeys.swift */,
 			);
 			path = "Lecture08-PuppyFlixDemo";
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EA2F3CB1D07A0D500A88E77 /* APIKeys.swift in Sources */,
 				9E1EC81A1CFE5F630086FF92 /* DetailViewController.swift in Sources */,
 				9E1EC8181CFE5F630086FF92 /* MasterViewController.swift in Sources */,
 				9E1EC84A1CFE63250086FF92 /* FTWCache.m in Sources */,
