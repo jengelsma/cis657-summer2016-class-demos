@@ -17,6 +17,7 @@
 		9EA2F3AC1D0788B500A88E77 /* Lecture11_FireBaseDemonstrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA2F3AB1D0788B500A88E77 /* Lecture11_FireBaseDemonstrationTests.swift */; };
 		9EA2F3B71D0788B500A88E77 /* Lecture11_FireBaseDemonstrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA2F3B61D0788B500A88E77 /* Lecture11_FireBaseDemonstrationUITests.swift */; };
 		9EA2F3C71D078F3800A88E77 /* MyDateEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA2F3C61D078F3800A88E77 /* MyDateEntry.swift */; };
+		9EA2F3CD1D07A89400A88E77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EA2F3CC1D07A89400A88E77 /* GoogleService-Info.plist */; };
 		BED0893BEB82BB05DD555235 /* Pods_Lecture11_FireBaseDemonstrationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C87F4908C1E032DD1D0D69E /* Pods_Lecture11_FireBaseDemonstrationUITests.framework */; };
 		E66ED97A1BEE66BA7D182705 /* Pods_Lecture11_FireBaseDemonstration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A676A175B390109FFFB1F55 /* Pods_Lecture11_FireBaseDemonstration.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		9EA2F3B61D0788B500A88E77 /* Lecture11_FireBaseDemonstrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lecture11_FireBaseDemonstrationUITests.swift; sourceTree = "<group>"; };
 		9EA2F3B81D0788B500A88E77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EA2F3C61D078F3800A88E77 /* MyDateEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDateEntry.swift; sourceTree = "<group>"; };
+		9EA2F3CC1D07A89400A88E77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D138D69054A8A2997DB02A41 /* Pods-Lecture11-FireBaseDemonstrationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lecture11-FireBaseDemonstrationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lecture11-FireBaseDemonstrationUITests/Pods-Lecture11-FireBaseDemonstrationUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD273E0F45ED624E77427F9F /* Pods-Lecture11-FireBaseDemonstration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lecture11-FireBaseDemonstration.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lecture11-FireBaseDemonstration/Pods-Lecture11-FireBaseDemonstration.release.xcconfig"; sourceTree = "<group>"; };
 		FE799D004C506C8D3B995A5A /* Pods-Lecture11-FireBaseDemonstrationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lecture11-FireBaseDemonstrationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lecture11-FireBaseDemonstrationUITests/Pods-Lecture11-FireBaseDemonstrationUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				9EA2F39F1D0788B500A88E77 /* LaunchScreen.storyboard */,
 				9EA2F3A21D0788B500A88E77 /* Info.plist */,
 				9EA2F3C61D078F3800A88E77 /* MyDateEntry.swift */,
+				9EA2F3CC1D07A89400A88E77 /* GoogleService-Info.plist */,
 			);
 			path = "Lecture11-FireBaseDemonstration";
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EA2F3A11D0788B500A88E77 /* LaunchScreen.storyboard in Resources */,
+				9EA2F3CD1D07A89400A88E77 /* GoogleService-Info.plist in Resources */,
 				9EA2F39E1D0788B500A88E77 /* Assets.xcassets in Resources */,
 				9EA2F39C1D0788B500A88E77 /* Main.storyboard in Resources */,
 			);

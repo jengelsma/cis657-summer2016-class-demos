@@ -222,4 +222,6 @@ Carthage/Build
 fastlane/report.xml
 fastlane/screenshots
 
+# We don't want private API info in our repo do we? 
 APIKeys.swift
+GoogleService-Info.plist
