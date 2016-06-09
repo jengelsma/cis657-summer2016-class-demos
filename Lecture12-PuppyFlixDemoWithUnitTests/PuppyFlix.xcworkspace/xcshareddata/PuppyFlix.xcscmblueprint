@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F2C39DAFAB485F14AC3B1B5DD07D5D9EF16F77F7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F2C39DAFAB485F14AC3B1B5DD07D5D9EF16F77F7" : 0,
+    "833262E1DC60F09961D3A060BB97C66C868B5985" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F741DA8F-3025-476D-8BA6-CA832002A678",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F2C39DAFAB485F14AC3B1B5DD07D5D9EF16F77F7" : "Lecture12-PuppyFlixDemoWithUnitTests\/",
+    "833262E1DC60F09961D3A060BB97C66C868B5985" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PuppyFlix",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PuppyFlix.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jengelsma\/cis657-summer2016-class-demos.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "833262E1DC60F09961D3A060BB97C66C868B5985"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jengelsma\/puppyflix.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F2C39DAFAB485F14AC3B1B5DD07D5D9EF16F77F7"
+    }
+  ]
+}

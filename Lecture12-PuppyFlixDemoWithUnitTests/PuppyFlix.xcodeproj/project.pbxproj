@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64E99A832F529EFDB55E1B4E /* Pods_PuppyFlixTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E0DB57958B4DDC2EBFD57A /* Pods_PuppyFlixTests.framework */; };
+		9E22E7BB1BFFBD5C0062EE76 /* YouTubeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E22E7BA1BFFBD5C0062EE76 /* YouTubeAPI.swift */; };
+		9E22E7BE1BFFBE840062EE76 /* VideoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E22E7BD1BFFBE840062EE76 /* VideoAPI.swift */; };
+		9E22E7C11BFFBEE00062EE76 /* VideoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E22E7C01BFFBEE00062EE76 /* VideoInfo.swift */; };
+		9E22E8391C0E4F180062EE76 /* VideoStubSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E22E8371C0E365A0062EE76 /* VideoStubSuccess.json */; };
+		9E22E83C1C0E56200062EE76 /* VideoStubParseError.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E22E83A1C0E55180062EE76 /* VideoStubParseError.json */; };
+		9E58FF671C165A1800B1087F /* MasterViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E58FF661C165A1800B1087F /* MasterViewControllerTests.swift */; };
+		9E58FF6B1C16654600B1087F /* XCTestCase+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E58FF6A1C16654600B1087F /* XCTestCase+Helpers.swift */; };
+		9E58FF6D1C1744EC00B1087F /* MasterViewAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E58FF6C1C1744EC00B1087F /* MasterViewAlertTests.swift */; };
+		9E58FF6E1C17551000B1087F /* VideoStubSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E22E8371C0E365A0062EE76 /* VideoStubSuccess.json */; };
+		9E58FF6F1C17551600B1087F /* VideoStubParseError.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E22E83A1C0E55180062EE76 /* VideoStubParseError.json */; };
+		9EA2F3D11D09F1D600A88E77 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA2F3D01D09F1D600A88E77 /* APIKeys.swift */; };
+		9ECD229D1BCEC8AA00CBDDBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECD229C1BCEC8AA00CBDDBE /* AppDelegate.swift */; };
+		9ECD229F1BCEC8AA00CBDDBE /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECD229E1BCEC8AA00CBDDBE /* MasterViewController.swift */; };
+		9ECD22A11BCEC8AA00CBDDBE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECD22A01BCEC8AA00CBDDBE /* DetailViewController.swift */; };
+		9ECD22A41BCEC8AA00CBDDBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ECD22A21BCEC8AA00CBDDBE /* Main.storyboard */; };
+		9ECD22A61BCEC8AA00CBDDBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ECD22A51BCEC8AA00CBDDBE /* Assets.xcassets */; };
+		9ECD22A91BCEC8AA00CBDDBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ECD22A71BCEC8AA00CBDDBE /* LaunchScreen.storyboard */; };
+		9ECD22B41BCEC8AA00CBDDBE /* YouTubeAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECD22B31BCEC8AA00CBDDBE /* YouTubeAPITests.swift */; };
+		9ECD22BF1BCEC8AA00CBDDBE /* PuppyFlixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECD22BE1BCEC8AA00CBDDBE /* PuppyFlixUITests.swift */; };
+		9ECD22D21BCEC98200CBDDBE /* FTWCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECD22CF1BCEC98200CBDDBE /* FTWCache.m */; };
+		9ECD22D31BCEC98200CBDDBE /* UIImageView+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECD22D11BCEC98200CBDDBE /* UIImageView+Network.m */; };
+		9ED0E0071C17602A0000531E /* VideoStubSuccess.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E22E8371C0E365A0062EE76 /* VideoStubSuccess.json */; };
+		9ED0E0081C1760320000531E /* VideoStubParseError.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E22E83A1C0E55180062EE76 /* VideoStubParseError.json */; };
+		9ED0E00A1C19CEAE0000531E /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED0E0091C19CEAE0000531E /* DetailViewControllerTests.swift */; };
+		BCFCB2FDA556CE63A935FBFB /* Pods_PuppyFlix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16970E39BF2AF32BBB6001E9 /* Pods_PuppyFlix.framework */; };
+		DA3D5E13835D4828E5AC7CFB /* Pods_PuppyFlixUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74D145BFC7AF1C8EF57E3F7 /* Pods_PuppyFlixUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9ECD22B01BCEC8AA00CBDDBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ECD22911BCEC8AA00CBDDBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ECD22981BCEC8AA00CBDDBE;
+			remoteInfo = PuppyFlix;
+		};
+		9ECD22BB1BCEC8AA00CBDDBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ECD22911BCEC8AA00CBDDBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ECD22981BCEC8AA00CBDDBE;
+			remoteInfo = PuppyFlix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16970E39BF2AF32BBB6001E9 /* Pods_PuppyFlix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuppyFlix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E0DB57958B4DDC2EBFD57A /* Pods_PuppyFlixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuppyFlixTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C394C84753783E63BE8406A /* Pods-PuppyFlixUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuppyFlixUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PuppyFlixUITests/Pods-PuppyFlixUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C6E64F63EF676C9E87E3F2F /* Pods-PuppyFlixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuppyFlixTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuppyFlixTests/Pods-PuppyFlixTests.release.xcconfig"; sourceTree = "<group>"; };
+		6F2DA5FDAC9A55EBE12DC27D /* Pods-PuppyFlixTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuppyFlixTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PuppyFlixTests/Pods-PuppyFlixTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E22E7BA1BFFBD5C0062EE76 /* YouTubeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeAPI.swift; sourceTree = "<group>"; };
+		9E22E7BD1BFFBE840062EE76 /* VideoAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoAPI.swift; sourceTree = "<group>"; };
+		9E22E7C01BFFBEE00062EE76 /* VideoInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoInfo.swift; sourceTree = "<group>"; };
+		9E22E8371C0E365A0062EE76 /* VideoStubSuccess.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VideoStubSuccess.json; sourceTree = "<group>"; };
+		9E22E83A1C0E55180062EE76 /* VideoStubParseError.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VideoStubParseError.json; sourceTree = "<group>"; };
+		9E58FF661C165A1800B1087F /* MasterViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewControllerTests.swift; sourceTree = "<group>"; };
+		9E58FF6A1C16654600B1087F /* XCTestCase+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Helpers.swift"; sourceTree = "<group>"; };
+		9E58FF6C1C1744EC00B1087F /* MasterViewAlertTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewAlertTests.swift; sourceTree = "<group>"; };
+		9EA2F3D01D09F1D600A88E77 /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		9ECD22991BCEC8AA00CBDDBE /* PuppyFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuppyFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ECD229C1BCEC8AA00CBDDBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9ECD229E1BCEC8AA00CBDDBE /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		9ECD22A01BCEC8AA00CBDDBE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9ECD22A31BCEC8AA00CBDDBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9ECD22A51BCEC8AA00CBDDBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9ECD22A81BCEC8AA00CBDDBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9ECD22AA1BCEC8AA00CBDDBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ECD22AF1BCEC8AA00CBDDBE /* PuppyFlixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuppyFlixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ECD22B31BCEC8AA00CBDDBE /* YouTubeAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeAPITests.swift; sourceTree = "<group>"; };
+		9ECD22B51BCEC8AA00CBDDBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ECD22BA1BCEC8AA00CBDDBE /* PuppyFlixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuppyFlixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ECD22BE1BCEC8AA00CBDDBE /* PuppyFlixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuppyFlixUITests.swift; sourceTree = "<group>"; };
+		9ECD22C01BCEC8AA00CBDDBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ECD22CD1BCEC98100CBDDBE /* PuppyFlix-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PuppyFlix-Bridging-Header.h"; sourceTree = "<group>"; };
+		9ECD22CE1BCEC98200CBDDBE /* FTWCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTWCache.h; sourceTree = "<group>"; };
+		9ECD22CF1BCEC98200CBDDBE /* FTWCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTWCache.m; sourceTree = "<group>"; };
+		9ECD22D01BCEC98200CBDDBE /* UIImageView+Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Network.h"; sourceTree = "<group>"; };
+		9ECD22D11BCEC98200CBDDBE /* UIImageView+Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Network.m"; sourceTree = "<group>"; };
+		9ED0E0091C19CEAE0000531E /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
+		B90611C91D67424930FBFCC2 /* Pods-PuppyFlix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuppyFlix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PuppyFlix/Pods-PuppyFlix.debug.xcconfig"; sourceTree = "<group>"; };
+		C74D145BFC7AF1C8EF57E3F7 /* Pods_PuppyFlixUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuppyFlixUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C95F504086EACECB10AB07F1 /* Pods-PuppyFlix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuppyFlix.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuppyFlix/Pods-PuppyFlix.release.xcconfig"; sourceTree = "<group>"; };
+		D4F23EDBAB243AB984DAD5CC /* Pods-PuppyFlixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuppyFlixUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PuppyFlixUITests/Pods-PuppyFlixUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		924B0686614822F37C2FB568 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA3D5E13835D4828E5AC7CFB /* Pods_PuppyFlixUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ECD22961BCEC8AA00CBDDBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFCB2FDA556CE63A935FBFB /* Pods_PuppyFlix.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ECD22AC1BCEC8AA00CBDDBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64E99A832F529EFDB55E1B4E /* Pods_PuppyFlixTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72B2C59652C7FB8FEC4D5F83 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B90611C91D67424930FBFCC2 /* Pods-PuppyFlix.debug.xcconfig */,
+				C95F504086EACECB10AB07F1 /* Pods-PuppyFlix.release.xcconfig */,
+				6F2DA5FDAC9A55EBE12DC27D /* Pods-PuppyFlixTests.debug.xcconfig */,
+				6C6E64F63EF676C9E87E3F2F /* Pods-PuppyFlixTests.release.xcconfig */,
+				6C394C84753783E63BE8406A /* Pods-PuppyFlixUITests.debug.xcconfig */,
+				D4F23EDBAB243AB984DAD5CC /* Pods-PuppyFlixUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E22E7BC1BFFBE5E0062EE76 /* VideoAPI */ = {
+			isa = PBXGroup;
+			children = (
+				9E22E7BA1BFFBD5C0062EE76 /* YouTubeAPI.swift */,
+				9E22E7BD1BFFBE840062EE76 /* VideoAPI.swift */,
+				9EA2F3D01D09F1D600A88E77 /* APIKeys.swift */,
+			);
+			name = VideoAPI;
+			sourceTree = "<group>";
+		};
+		9E22E7BF1BFFBEC20062EE76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9E22E7C01BFFBEE00062EE76 /* VideoInfo.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9E22E8361C0E36310062EE76 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				9E22E8371C0E365A0062EE76 /* VideoStubSuccess.json */,
+				9E22E83A1C0E55180062EE76 /* VideoStubParseError.json */,
+			);
+			name = Stubs;
+			sourceTree = "<group>";
+		};
+		9ECD22901BCEC8AA00CBDDBE = {
+			isa = PBXGroup;
+			children = (
+				9ECD229B1BCEC8AA00CBDDBE /* PuppyFlix */,
+				9ECD22B21BCEC8AA00CBDDBE /* PuppyFlixTests */,
+				9ECD22BD1BCEC8AA00CBDDBE /* PuppyFlixUITests */,
+				9ECD229A1BCEC8AA00CBDDBE /* Products */,
+				72B2C59652C7FB8FEC4D5F83 /* Pods */,
+				E3F979FFE5CF72F3453F2F10 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9ECD229A1BCEC8AA00CBDDBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ECD22991BCEC8AA00CBDDBE /* PuppyFlix.app */,
+				9ECD22AF1BCEC8AA00CBDDBE /* PuppyFlixTests.xctest */,
+				9ECD22BA1BCEC8AA00CBDDBE /* PuppyFlixUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ECD229B1BCEC8AA00CBDDBE /* PuppyFlix */ = {
+			isa = PBXGroup;
+			children = (
+				9E22E8361C0E36310062EE76 /* Stubs */,
+				9E22E7BF1BFFBEC20062EE76 /* Model */,
+				9E22E7BC1BFFBE5E0062EE76 /* VideoAPI */,
+				9ECD22CC1BCEC96B00CBDDBE /* ExternalComponents */,
+				9ECD229C1BCEC8AA00CBDDBE /* AppDelegate.swift */,
+				9ECD229E1BCEC8AA00CBDDBE /* MasterViewController.swift */,
+				9ECD22A01BCEC8AA00CBDDBE /* DetailViewController.swift */,
+				9ECD22A21BCEC8AA00CBDDBE /* Main.storyboard */,
+				9ECD22A51BCEC8AA00CBDDBE /* Assets.xcassets */,
+				9ECD22A71BCEC8AA00CBDDBE /* LaunchScreen.storyboard */,
+				9ECD22AA1BCEC8AA00CBDDBE /* Info.plist */,
+			);
+			path = PuppyFlix;
+			sourceTree = "<group>";
+		};
+		9ECD22B21BCEC8AA00CBDDBE /* PuppyFlixTests */ = {
+			isa = PBXGroup;
+			children = (
+				9ECD22B31BCEC8AA00CBDDBE /* YouTubeAPITests.swift */,
+				9E58FF661C165A1800B1087F /* MasterViewControllerTests.swift */,
+				9E58FF6C1C1744EC00B1087F /* MasterViewAlertTests.swift */,
+				9ED0E0091C19CEAE0000531E /* DetailViewControllerTests.swift */,
+				9E58FF6A1C16654600B1087F /* XCTestCase+Helpers.swift */,
+				9ECD22B51BCEC8AA00CBDDBE /* Info.plist */,
+			);
+			path = PuppyFlixTests;
+			sourceTree = "<group>";
+		};
+		9ECD22BD1BCEC8AA00CBDDBE /* PuppyFlixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9ECD22BE1BCEC8AA00CBDDBE /* PuppyFlixUITests.swift */,
+				9ECD22C01BCEC8AA00CBDDBE /* Info.plist */,
+			);
+			path = PuppyFlixUITests;
+			sourceTree = "<group>";
+		};
+		9ECD22CC1BCEC96B00CBDDBE /* ExternalComponents */ = {
+			isa = PBXGroup;
+			children = (
+				9ECD22CE1BCEC98200CBDDBE /* FTWCache.h */,
+				9ECD22CF1BCEC98200CBDDBE /* FTWCache.m */,
+				9ECD22D01BCEC98200CBDDBE /* UIImageView+Network.h */,
+				9ECD22D11BCEC98200CBDDBE /* UIImageView+Network.m */,
+				9ECD22CD1BCEC98100CBDDBE /* PuppyFlix-Bridging-Header.h */,
+			);
+			name = ExternalComponents;
+			sourceTree = "<group>";
+		};
+		E3F979FFE5CF72F3453F2F10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16970E39BF2AF32BBB6001E9 /* Pods_PuppyFlix.framework */,
+				20E0DB57958B4DDC2EBFD57A /* Pods_PuppyFlixTests.framework */,
+				C74D145BFC7AF1C8EF57E3F7 /* Pods_PuppyFlixUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9ECD22981BCEC8AA00CBDDBE /* PuppyFlix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ECD22C31BCEC8AA00CBDDBE /* Build configuration list for PBXNativeTarget "PuppyFlix" */;
+			buildPhases = (
+				8B13C0611EBE205A10D252F3 /* [CP] Check Pods Manifest.lock */,
+				9ECD22951BCEC8AA00CBDDBE /* Sources */,
+				9ECD22961BCEC8AA00CBDDBE /* Frameworks */,
+				9ECD22971BCEC8AA00CBDDBE /* Resources */,
+				EE2AF0F265A6B25A5F01B4AE /* [CP] Embed Pods Frameworks */,
+				CC34CF23997066B61583D91A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PuppyFlix;
+			productName = PuppyFlix;
+			productReference = 9ECD22991BCEC8AA00CBDDBE /* PuppyFlix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9ECD22AE1BCEC8AA00CBDDBE /* PuppyFlixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ECD22C61BCEC8AA00CBDDBE /* Build configuration list for PBXNativeTarget "PuppyFlixTests" */;
+			buildPhases = (
+				FF4BCD6F45A0DC5937718733 /* [CP] Check Pods Manifest.lock */,
+				9ECD22AB1BCEC8AA00CBDDBE /* Sources */,
+				9ECD22AC1BCEC8AA00CBDDBE /* Frameworks */,
+				9ECD22AD1BCEC8AA00CBDDBE /* Resources */,
+				90B100DC0E71E9E4402A1377 /* [CP] Embed Pods Frameworks */,
+				27E983D102445B40B0127964 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9ECD22B11BCEC8AA00CBDDBE /* PBXTargetDependency */,
+			);
+			name = PuppyFlixTests;
+			productName = PuppyFlixTests;
+			productReference = 9ECD22AF1BCEC8AA00CBDDBE /* PuppyFlixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9ECD22B91BCEC8AA00CBDDBE /* PuppyFlixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ECD22C91BCEC8AA00CBDDBE /* Build configuration list for PBXNativeTarget "PuppyFlixUITests" */;
+			buildPhases = (
+				C292095E3E8A789EA88B9167 /* [CP] Check Pods Manifest.lock */,
+				9ECD22B61BCEC8AA00CBDDBE /* Sources */,
+				9ECD22B81BCEC8AA00CBDDBE /* Resources */,
+				924B0686614822F37C2FB568 /* Frameworks */,
+				FA97CE07080588860CEC37FA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9ECD22BC1BCEC8AA00CBDDBE /* PBXTargetDependency */,
+			);
+			name = PuppyFlixUITests;
+			productName = PuppyFlixUITests;
+			productReference = 9ECD22BA1BCEC8AA00CBDDBE /* PuppyFlixUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9ECD22911BCEC8AA00CBDDBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Jonathan Engelsma";
+				TargetAttributes = {
+					9ECD22981BCEC8AA00CBDDBE = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					9ECD22AE1BCEC8AA00CBDDBE = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 9ECD22981BCEC8AA00CBDDBE;
+					};
+					9ECD22B91BCEC8AA00CBDDBE = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 9ECD22981BCEC8AA00CBDDBE;
+					};
+				};
+			};
+			buildConfigurationList = 9ECD22941BCEC8AA00CBDDBE /* Build configuration list for PBXProject "PuppyFlix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9ECD22901BCEC8AA00CBDDBE;
+			productRefGroup = 9ECD229A1BCEC8AA00CBDDBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9ECD22981BCEC8AA00CBDDBE /* PuppyFlix */,
+				9ECD22AE1BCEC8AA00CBDDBE /* PuppyFlixTests */,
+				9ECD22B91BCEC8AA00CBDDBE /* PuppyFlixUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9ECD22971BCEC8AA00CBDDBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ECD22A91BCEC8AA00CBDDBE /* LaunchScreen.storyboard in Resources */,
+				9ECD22A61BCEC8AA00CBDDBE /* Assets.xcassets in Resources */,
+				9ECD22A41BCEC8AA00CBDDBE /* Main.storyboard in Resources */,
+				9ED0E0081C1760320000531E /* VideoStubParseError.json in Resources */,
+				9ED0E0071C17602A0000531E /* VideoStubSuccess.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ECD22AD1BCEC8AA00CBDDBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E22E83C1C0E56200062EE76 /* VideoStubParseError.json in Resources */,
+				9E22E8391C0E4F180062EE76 /* VideoStubSuccess.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ECD22B81BCEC8AA00CBDDBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E58FF6F1C17551600B1087F /* VideoStubParseError.json in Resources */,
+				9E58FF6E1C17551000B1087F /* VideoStubSuccess.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27E983D102445B40B0127964 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuppyFlixTests/Pods-PuppyFlixTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B13C0611EBE205A10D252F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90B100DC0E71E9E4402A1377 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuppyFlixTests/Pods-PuppyFlixTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C292095E3E8A789EA88B9167 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CC34CF23997066B61583D91A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuppyFlix/Pods-PuppyFlix-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE2AF0F265A6B25A5F01B4AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuppyFlix/Pods-PuppyFlix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA97CE07080588860CEC37FA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PuppyFlixUITests/Pods-PuppyFlixUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF4BCD6F45A0DC5937718733 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9ECD22951BCEC8AA00CBDDBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ECD22A11BCEC8AA00CBDDBE /* DetailViewController.swift in Sources */,
+				9E22E7BE1BFFBE840062EE76 /* VideoAPI.swift in Sources */,
+				9ECD229F1BCEC8AA00CBDDBE /* MasterViewController.swift in Sources */,
+				9EA2F3D11D09F1D600A88E77 /* APIKeys.swift in Sources */,
+				9ECD22D21BCEC98200CBDDBE /* FTWCache.m in Sources */,
+				9ECD229D1BCEC8AA00CBDDBE /* AppDelegate.swift in Sources */,
+				9E22E7C11BFFBEE00062EE76 /* VideoInfo.swift in Sources */,
+				9E22E7BB1BFFBD5C0062EE76 /* YouTubeAPI.swift in Sources */,
+				9ECD22D31BCEC98200CBDDBE /* UIImageView+Network.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ECD22AB1BCEC8AA00CBDDBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E58FF6B1C16654600B1087F /* XCTestCase+Helpers.swift in Sources */,
+				9ED0E00A1C19CEAE0000531E /* DetailViewControllerTests.swift in Sources */,
+				9E58FF671C165A1800B1087F /* MasterViewControllerTests.swift in Sources */,
+				9ECD22B41BCEC8AA00CBDDBE /* YouTubeAPITests.swift in Sources */,
+				9E58FF6D1C1744EC00B1087F /* MasterViewAlertTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ECD22B61BCEC8AA00CBDDBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ECD22BF1BCEC8AA00CBDDBE /* PuppyFlixUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9ECD22B11BCEC8AA00CBDDBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ECD22981BCEC8AA00CBDDBE /* PuppyFlix */;
+			targetProxy = 9ECD22B01BCEC8AA00CBDDBE /* PBXContainerItemProxy */;
+		};
+		9ECD22BC1BCEC8AA00CBDDBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ECD22981BCEC8AA00CBDDBE /* PuppyFlix */;
+			targetProxy = 9ECD22BB1BCEC8AA00CBDDBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9ECD22A21BCEC8AA00CBDDBE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ECD22A31BCEC8AA00CBDDBE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9ECD22A71BCEC8AA00CBDDBE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ECD22A81BCEC8AA00CBDDBE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9ECD22C11BCEC8AA00CBDDBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9ECD22C21BCEC8AA00CBDDBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9ECD22C41BCEC8AA00CBDDBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B90611C91D67424930FBFCC2 /* Pods-PuppyFlix.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = PuppyFlix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appiarium.PuppyFlix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PuppyFlix/PuppyFlix-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9ECD22C51BCEC8AA00CBDDBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C95F504086EACECB10AB07F1 /* Pods-PuppyFlix.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = PuppyFlix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appiarium.PuppyFlix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PuppyFlix/PuppyFlix-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		9ECD22C71BCEC8AA00CBDDBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F2DA5FDAC9A55EBE12DC27D /* Pods-PuppyFlixTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PuppyFlixTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appiarium.PuppyFlixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuppyFlix.app/PuppyFlix";
+			};
+			name = Debug;
+		};
+		9ECD22C81BCEC8AA00CBDDBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C6E64F63EF676C9E87E3F2F /* Pods-PuppyFlixTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PuppyFlixTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appiarium.PuppyFlixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuppyFlix.app/PuppyFlix";
+			};
+			name = Release;
+		};
+		9ECD22CA1BCEC8AA00CBDDBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C394C84753783E63BE8406A /* Pods-PuppyFlixUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = PuppyFlixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appiarium.PuppyFlixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PuppyFlix;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9ECD22CB1BCEC8AA00CBDDBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4F23EDBAB243AB984DAD5CC /* Pods-PuppyFlixUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = PuppyFlixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appiarium.PuppyFlixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PuppyFlix;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9ECD22941BCEC8AA00CBDDBE /* Build configuration list for PBXProject "PuppyFlix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ECD22C11BCEC8AA00CBDDBE /* Debug */,
+				9ECD22C21BCEC8AA00CBDDBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ECD22C31BCEC8AA00CBDDBE /* Build configuration list for PBXNativeTarget "PuppyFlix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ECD22C41BCEC8AA00CBDDBE /* Debug */,
+				9ECD22C51BCEC8AA00CBDDBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ECD22C61BCEC8AA00CBDDBE /* Build configuration list for PBXNativeTarget "PuppyFlixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ECD22C71BCEC8AA00CBDDBE /* Debug */,
+				9ECD22C81BCEC8AA00CBDDBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ECD22C91BCEC8AA00CBDDBE /* Build configuration list for PBXNativeTarget "PuppyFlixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ECD22CA1BCEC8AA00CBDDBE /* Debug */,
+				9ECD22CB1BCEC8AA00CBDDBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9ECD22911BCEC8AA00CBDDBE /* Project object */;
+}
