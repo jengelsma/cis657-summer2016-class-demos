@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		65EC88DDBD04ECE15D6BE644 /* Pods_Lecture08_PuppyFlixDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E5FADECCB0EFC87BC23F4F /* Pods_Lecture08_PuppyFlixDemo.framework */; };
 		95B16CE4303DC695119BDF04 /* Pods_Lecture08_PuppyFlixDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF39C6F55223102FA5548BB7 /* Pods_Lecture08_PuppyFlixDemoUITests.framework */; };
+		9E11D98F1D10D2F4000BC58C /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E11D98E1D10D2F4000BC58C /* NotificationCenter.framework */; };
+		9E11D9921D10D2F4000BC58C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E11D9911D10D2F4000BC58C /* TodayViewController.swift */; };
+		9E11D9951D10D2F4000BC58C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E11D9931D10D2F4000BC58C /* MainInterface.storyboard */; };
+		9E11D9991D10D2F4000BC58C /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9E11D98D1D10D2F4000BC58C /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9E11D99E1D10D471000BC58C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E1EC81E1CFE5F630086FF92 /* Assets.xcassets */; };
 		9E1EC8161CFE5F630086FF92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1EC8151CFE5F630086FF92 /* AppDelegate.swift */; };
 		9E1EC8181CFE5F630086FF92 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1EC8171CFE5F630086FF92 /* MasterViewController.swift */; };
 		9E1EC81A1CFE5F630086FF92 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1EC8191CFE5F630086FF92 /* DetailViewController.swift */; };
@@ -19,11 +24,19 @@
 		9E1EC8381CFE5F630086FF92 /* Lecture08_PuppyFlixDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1EC8371CFE5F630086FF92 /* Lecture08_PuppyFlixDemoUITests.swift */; };
 		9E1EC84A1CFE63250086FF92 /* FTWCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1EC8471CFE63250086FF92 /* FTWCache.m */; };
 		9E1EC84B1CFE63250086FF92 /* UIImageView+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1EC8491CFE63250086FF92 /* UIImageView+Network.m */; };
+		9E636FCD1D10D9370011169A /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA2F3CE1D09BD3800A88E77 /* APIKeys.swift */; };
 		9EA2F3CF1D09BD3800A88E77 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA2F3CE1D09BD3800A88E77 /* APIKeys.swift */; };
 		FA5DB24970A02B14131D23C9 /* Pods_Lecture08_PuppyFlixDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCDCAC941661767186E0ECA /* Pods_Lecture08_PuppyFlixDemoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		9E11D9971D10D2F4000BC58C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E1EC80A1CFE5F630086FF92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E11D98C1D10D2F4000BC58C;
+			remoteInfo = TodayExtension;
+		};
 		9E1EC8291CFE5F630086FF92 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9E1EC80A1CFE5F630086FF92 /* Project object */;
@@ -40,11 +53,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9E11D99D1D10D2F4000BC58C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9E11D9991D10D2F4000BC58C /* TodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		13E5FADECCB0EFC87BC23F4F /* Pods_Lecture08_PuppyFlixDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lecture08_PuppyFlixDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3155583C2A65DFB260F97BC3 /* Pods-Lecture08-PuppyFlixDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lecture08-PuppyFlixDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lecture08-PuppyFlixDemoTests/Pods-Lecture08-PuppyFlixDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		4CCDCAC941661767186E0ECA /* Pods_Lecture08_PuppyFlixDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lecture08_PuppyFlixDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F765E66751AA17EB0440727 /* Pods-Lecture08-PuppyFlixDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lecture08-PuppyFlixDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lecture08-PuppyFlixDemo/Pods-Lecture08-PuppyFlixDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9E11D98D1D10D2F4000BC58C /* TodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E11D98E1D10D2F4000BC58C /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		9E11D9911D10D2F4000BC58C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		9E11D9941D10D2F4000BC58C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9E11D9961D10D2F4000BC58C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E1EC8121CFE5F630086FF92 /* Lecture08-PuppyFlixDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lecture08-PuppyFlixDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E1EC8151CFE5F630086FF92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E1EC8171CFE5F630086FF92 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +105,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9E11D98A1D10D2F4000BC58C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E11D98F1D10D2F4000BC58C /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9E1EC80F1CFE5F630086FF92 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -113,12 +153,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9E11D9901D10D2F4000BC58C /* TodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9E11D9911D10D2F4000BC58C /* TodayViewController.swift */,
+				9E11D9931D10D2F4000BC58C /* MainInterface.storyboard */,
+				9E11D9961D10D2F4000BC58C /* Info.plist */,
+			);
+			path = TodayExtension;
+			sourceTree = "<group>";
+		};
 		9E1EC8091CFE5F630086FF92 = {
 			isa = PBXGroup;
 			children = (
 				9E1EC8141CFE5F630086FF92 /* Lecture08-PuppyFlixDemo */,
 				9E1EC82B1CFE5F630086FF92 /* Lecture08-PuppyFlixDemoTests */,
 				9E1EC8361CFE5F630086FF92 /* Lecture08-PuppyFlixDemoUITests */,
+				9E11D9901D10D2F4000BC58C /* TodayExtension */,
 				9E1EC8131CFE5F630086FF92 /* Products */,
 				050BBE720B248168F6E1B89D /* Pods */,
 				C53A1FE61B86FEEE0CF88F13 /* Frameworks */,
@@ -131,6 +182,7 @@
 				9E1EC8121CFE5F630086FF92 /* Lecture08-PuppyFlixDemo.app */,
 				9E1EC8281CFE5F630086FF92 /* Lecture08-PuppyFlixDemoTests.xctest */,
 				9E1EC8331CFE5F630086FF92 /* Lecture08-PuppyFlixDemoUITests.xctest */,
+				9E11D98D1D10D2F4000BC58C /* TodayExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,6 +231,7 @@
 				13E5FADECCB0EFC87BC23F4F /* Pods_Lecture08_PuppyFlixDemo.framework */,
 				4CCDCAC941661767186E0ECA /* Pods_Lecture08_PuppyFlixDemoTests.framework */,
 				CF39C6F55223102FA5548BB7 /* Pods_Lecture08_PuppyFlixDemoUITests.framework */,
+				9E11D98E1D10D2F4000BC58C /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -186,6 +239,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9E11D98C1D10D2F4000BC58C /* TodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E11D99C1D10D2F4000BC58C /* Build configuration list for PBXNativeTarget "TodayExtension" */;
+			buildPhases = (
+				9E11D9891D10D2F4000BC58C /* Sources */,
+				9E11D98A1D10D2F4000BC58C /* Frameworks */,
+				9E11D98B1D10D2F4000BC58C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayExtension;
+			productName = TodayExtension;
+			productReference = 9E11D98D1D10D2F4000BC58C /* TodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		9E1EC8111CFE5F630086FF92 /* Lecture08-PuppyFlixDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E1EC83C1CFE5F630086FF92 /* Build configuration list for PBXNativeTarget "Lecture08-PuppyFlixDemo" */;
@@ -196,10 +266,12 @@
 				9E1EC8101CFE5F630086FF92 /* Resources */,
 				04BB6B4AADB27289FCFC94C6 /* [CP] Embed Pods Frameworks */,
 				A64D9654CB3E79D4DDFADBAE /* [CP] Copy Pods Resources */,
+				9E11D99D1D10D2F4000BC58C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9E11D9981D10D2F4000BC58C /* PBXTargetDependency */,
 			);
 			name = "Lecture08-PuppyFlixDemo";
 			productName = "Lecture08-PuppyFlixDemo";
@@ -257,6 +329,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Jonathan Engelsma";
 				TargetAttributes = {
+					9E11D98C1D10D2F4000BC58C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					9E1EC8111CFE5F630086FF92 = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -286,11 +361,21 @@
 				9E1EC8111CFE5F630086FF92 /* Lecture08-PuppyFlixDemo */,
 				9E1EC8271CFE5F630086FF92 /* Lecture08-PuppyFlixDemoTests */,
 				9E1EC8321CFE5F630086FF92 /* Lecture08-PuppyFlixDemoUITests */,
+				9E11D98C1D10D2F4000BC58C /* TodayExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9E11D98B1D10D2F4000BC58C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E11D99E1D10D471000BC58C /* Assets.xcassets in Resources */,
+				9E11D9951D10D2F4000BC58C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9E1EC8101CFE5F630086FF92 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -441,6 +526,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9E11D9891D10D2F4000BC58C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E636FCD1D10D9370011169A /* APIKeys.swift in Sources */,
+				9E11D9921D10D2F4000BC58C /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9E1EC80E1CFE5F630086FF92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -473,6 +567,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9E11D9981D10D2F4000BC58C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E11D98C1D10D2F4000BC58C /* TodayExtension */;
+			targetProxy = 9E11D9971D10D2F4000BC58C /* PBXContainerItemProxy */;
+		};
 		9E1EC82A1CFE5F630086FF92 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9E1EC8111CFE5F630086FF92 /* Lecture08-PuppyFlixDemo */;
@@ -486,6 +585,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		9E11D9931D10D2F4000BC58C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E11D9941D10D2F4000BC58C /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		9E1EC81B1CFE5F630086FF92 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -505,6 +612,28 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9E11D99A1D10D2F4000BC58C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.gvsu.cis.cis657.Lecture08-PuppyFlixDemo.TodayExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9E11D99B1D10D2F4000BC58C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.gvsu.cis.cis657.Lecture08-PuppyFlixDemo.TodayExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		9E1EC83A1CFE5F630086FF92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -594,6 +723,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Lecture08-PuppyFlixDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.gvsu.cis.cis657.Lecture08-PuppyFlixDemo";
@@ -609,6 +739,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Lecture08-PuppyFlixDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.gvsu.cis.cis657.Lecture08-PuppyFlixDemo";
@@ -670,6 +801,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9E11D99C1D10D2F4000BC58C /* Build configuration list for PBXNativeTarget "TodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E11D99A1D10D2F4000BC58C /* Debug */,
+				9E11D99B1D10D2F4000BC58C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9E1EC80D1CFE5F630086FF92 /* Build configuration list for PBXProject "Lecture08-PuppyFlixDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
